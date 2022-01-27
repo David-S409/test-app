@@ -1,14 +1,12 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, Button } from 'react-native';
+import { StyleSheet, Text, View, Button , TextInput } from 'react-native';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <Button
-        title="Learn More"
-        color="#841584"
-        accessibilityLabel="Learn more about this purple button"
+      <TextInput
+      style={styles.input}
+      placeholder="Full Name"
       />
       <StatusBar style="auto" />
     </View>
@@ -18,8 +16,18 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'gray',
+    backgroundColor: 'white',
     alignItems: 'center',
     justifyContent: 'center',
+  },
+  input: {
+    height: 41,
+
+    margin: 12,
+    padding: 10,
+    width: '80%',
+   backgroundColor: '#C4C4C4',
+   borderRadius: 8,
+
   },
 });
