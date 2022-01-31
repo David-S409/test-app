@@ -5,6 +5,7 @@ import {
   TextInput,
   Text,
   SafeAreaView,
+  Button,
 } from "react-native";
 
 export default function App() {
@@ -29,22 +30,18 @@ export default function App() {
           }}
         />
       </View>
-      {/* it will hold the main view */}
       <View
         style={{
           marginHorizontal: 45,
         }}
       >
-        <View
-          style={styles.main}
-          style={{ flex: 1, justifyContent: "center", alignItems: "center" }}
-        >
+        <View style={{ justifyContent: "center", alignItems: "center" }}>
           <Text
             style={styles.title}
             style={{
               fontWeight: "bold",
               fontSize: 25,
-              width: "75%",
+              width: "88%",
               textAlignVertical: "center",
               textAlign: "center",
               marginVertical: 25,
@@ -57,7 +54,6 @@ export default function App() {
           <Text
             style={{
               alignSelf: "flex-start",
-
               fontSize: 18,
               color: "gray",
               marginBottom: 15,
@@ -67,10 +63,15 @@ export default function App() {
           </Text>
         </View>
         <View>
-          <TextInput placeholder="useless placeholder" style={styles.input} />
-          <TextInput placeholder="useless placeholder" style={styles.input} />
+          <TextInput placeholder="Full Name" style={styles.input} />
+          <TextInput placeholder="Email" style={styles.input} />
+          <TextInput placeholder="Phone" style={styles.input} />
+          <TextInput placeholder="Address" style={styles.input} />
+          <TextInput placeholder="Address Line 2" style={styles.input} />
+          <TextInput placeholder="City" style={styles.input} />
+          <TextInput placeholder="State" style={styles.input} />
+          <TextInput placeholder="Zip Code" style={styles.input} />
         </View>
-
         <View
           style={{
             flexDirection: "row",
@@ -78,22 +79,25 @@ export default function App() {
             marginTop: 25,
           }}
         >
-          <button
-            style={{
-              backgroundColor: "gray",
-              color: "white",
-            }}
-          >
-            CANCEL
-          </button>
-          <button
-            style={{
-              backgroundColor: "navy",
-              color: "white",
-            }}
-          >
-            CONTINUE
-          </button>
+          <View style={[{ width: "30%", margin: 10 }]}>
+            <Button
+              style={{
+                padding: 40,
+                marginHorizontal: 40,
+                width: 500,
+              }}
+              title="CANCEL"
+              color="#a9a9a9"
+              accessibilityLabel="Learn more about this purple button"
+            />
+          </View>
+          <View style={[{ width: "30%", margin: 10 }]}>
+            <Button
+              title="CONTINUE"
+              color="#0d21af"
+              accessibilityLabel="Learn more about this purple button"
+            />
+          </View>
         </View>
       </View>
     </SafeAreaView>
