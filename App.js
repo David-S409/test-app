@@ -44,7 +44,7 @@ export default function App() {
             style={{
               fontWeight: "bold",
               fontSize: 25,
-              width: "78%",
+              width: "75%",
               textAlignVertical: "center",
               textAlign: "center",
               marginVertical: 25,
