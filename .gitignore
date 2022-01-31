@@ -10,9 +10,18 @@ npm-debug.*
 *.orig.*
 web-build/
 
+.expo/
+.expo-shared/
+assets/
+
 # macOS
 .DS_Store
+<<<<<<< HEAD
 package-lock.json
 .expo/
 .expo-shared/
 assets/
+=======
+
+connect-api
+>>>>>>> 0005cce588804382ff557cb83afff120155dff28
